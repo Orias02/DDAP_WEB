@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fael Nidzom - Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="box">
+    <h1>Fatih Ahmad Reza El Nidzom</h1>
+    <div class="txt">
+      <div class="left">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQEbBoNYOx1yJQ/profile-displayphoto-shrink_800_800/B56ZT6JtIsGQAc-/0/1739363636826?e=1748476800&v=beta&t=heKzWefRDOcNvgdgRKBeOV7pr7Q6Vx6eBaEBJHSojHA" alt="Profile Photo" />
+      </div>
+      <div class="right">
+        <h2>Information Technology Student</h2>
+      </div>
+    </div>
+    <p>Hello! I’m <b>Fatih</b>, an <u>Information Technology</u> student at <mark>Brawijaya University</mark>. I’m passionate about programming and design, and currently exploring both <b>game development</b> and <b>web development</b>.</p>
+
+    <h2>🌑 Dark Mode</h2>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+    <h2>📝 To-Do List</h2>
+    <input type="text" id="todo-input" placeholder="Tambah tugas..." />
+    <button id="add-todo">Tambah</button>
+    <ul id="todo-list"></ul>
+
+    <div id="calculator-app">
+      <h2>🧮 Simple Calculator</h2>
+      <input type="text" id="calc-display" readonly />
+      <div id="calc-buttons">
+        <!-- buttons 0-9, +, -, *, /, =, C -->
+        <button class="calc-btn">7</button>
+        <button class="calc-btn">8</button>
+        <button class="calc-btn">9</button>
+        <button class="calc-btn">/</button>
+        <button class="calc-btn">4</button>
+        <button class="calc-btn">5</button>
+        <button class="calc-btn">6</button>
+        <button class="calc-btn">*</button>
+        <button class="calc-btn">1</button>
+        <button class="calc-btn">2</button>
+        <button class="calc-btn">3</button>
+        <button class="calc-btn">-</button>
+        <button class="calc-btn">0</button>
+        <button class="calc-btn">C</button>
+        <button class="calc-btn">=</button>
+        <button class="calc-btn">+</button>
+      </div>
+    </div>
+
+    <div id="guess-game">
+      <h2>🎯 Guess the Number</h2>
+      <p>Saya sudah memilih angka antara 1 dan 100. Coba tebak!</p>
+      <input type="number" id="guess-input" placeholder="Masukkan tebakan..." />
+      <button id="submit-guess">Tebak</button>
+      <p id="guess-result"></p>
+      <button id="reset-game" style="display:none;">Main Lagi</button>
+    </div>
+
+    <div id="unit-converter">
+      <h2>🌡️ Unit Converter</h2>
+      <select id="conversion-type">
+        <option value="temperature">Suhu</option>
+        <option value="length">Panjang</option>
+        <option value="weight">Berat</option>
+      </select>
+      <br />
+      <input type="number" id="unit-input" placeholder="Masukkan nilai..." />
+      <select id="unit-from"></select> ➡️ <select id="unit-to"></select>
+      <p id="unit-result"></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
